@@ -1,0 +1,132 @@
+body {
+  font-family: 'Times New Roman', serif;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  transition: transform .5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-item-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 15px;
+  opacity: 0;
+  transition: opacity .5s ease;
+}
+
+.gallery-item:hover .gallery-item-text {
+  opacity: 1;
+}
+
+footer {
+  padding: 20px;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+@media (max-width: 767.98px) {
+  .gallery-item {
+      margin-bottom: 20px;
+  }
+}
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+    }
+
+    .gallery-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .gallery-item-text {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .gallery-item-text h3 {
+        margin: 0;
+    }
+
+    .gallery-item-text p {
+        margin: 0;
+    }
+    .navbar-brand {
+      margin-right: auto;
+  }
+
+  .navbar-nav {
+      justify-content: flex-end;
+  }
+
+  .navbar-logo {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+  }
+
+  .navbar-text {
+      color: white;
+      margin-right: 10px;
+  }
+  footer.bg-warning {
+    border: 2px solid black;
+}
+.gallery-item {
+  border: 1px solid black;
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.gallery-item:last-child {
+  margin-right: 4px;
+}
+
+.gallery-item:nth-child(3n + 1) {
+  margin-top: 5px;
+}
+
+.gallery-item-text {
+  padding: 10px;
+}
+footer {
+  position: fixed;
+  bottom: auto;
+  left: 0;
+  right: 0;
+  height: auto;
+  padding-bottom: 100px;
+  width: 100%;
+}
+
