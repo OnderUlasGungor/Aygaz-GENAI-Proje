@@ -1,0 +1,225 @@
+body {
+  font-family: 'Times New Roman', serif;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  transition: transform .5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-item-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 15px;
+  opacity: 0;
+  transition: opacity .5s ease;
+}
+
+.gallery-item:hover .gallery-item-text {
+  opacity: 1;
+}
+
+footer {
+  padding: 20px;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+@media (max-width: 767.98px) {
+  .gallery-item {
+      margin-bottom: 20px;
+  }
+}
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+    }
+
+    .gallery-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .gallery-item-text {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .gallery-item-text h3 {
+        margin: 0;
+    }
+
+    .gallery-item-text p {
+        margin: 0;
+    }
+    .navbar-brand {
+      margin-right: auto;
+  }
+
+  .navbar-nav {
+      justify-content: flex-end;
+  }
+
+  .navbar-logo {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+  }
+
+  .navbar-text {
+      color: white;
+      margin-right: 10px;
+  }
+  footer.bg-warning {
+    border: 2px solid black;
+  }
+  .gallery-item {
+    border: 1px solid rgb(245, 245, 245);
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .gallery-item:last-child {
+    margin-right: 4px;
+  }
+  
+  .gallery-item:nth-child(3n + 1) {
+    margin-top: 5px;
+  }
+  
+  .gallery-item-text {
+    padding: 10px;
+    color: #fff; /* Metin rengini beyaz yap */
+  }
+  
+  .gallery-item-text h3 {
+    color: #fff; /* Başlık metin rengini beyaz yap */
+  }
+  
+  .gallery-item-text p {
+    color: #fff; /* Açıklama metin rengini beyaz yap */
+  }
+  
+footer {
+  position: fixed;
+  bottom: auto;
+  left: 0;
+  right: 0;
+  height: auto;
+  padding-bottom: 100px;
+  width: 100%;
+}
+
+.navbar-nav .nav-item {
+  margin-left: 2px; /* Düğmeler arasındaki boşluk */
+}
+
+.navbar-nav {
+  margin-left: auto; /* Düğmeleri sağa yasla */
+}
+footer {
+  background-color: #343a40; /* Footer arka plan rengi */
+}
+
+footer a {
+  color: #ffc107; /* Footer link metin rengi */
+}
+
+footer a:hover {
+  color: #fff; /* Footer link hover metin rengi */
+}
+/* Genel sayfa stilini belirt */
+body {
+  font-family: Arial, sans-serif; /* Varsayılan font */
+  background-color: #f8f9fa; /* Sayfa arka plan rengi */
+  color: #343a40; /* Varsayılan metin rengi */
+}
+
+/* Başlık stilleri */
+h1, h2, h3, h4, h5, h6 {
+  color: #343a40; /* Başlık metin rengi */
+  font-weight: bold; /* Başlık kalınlığı */
+}
+
+/* Linklerin stilini belirt */
+a {
+  color: #007bff; /* Link metin rengi */
+  text-decoration: none; /* Link altı çizgiyi kaldır */
+}
+
+/* Linklerin hover (üzerine gelindiğinde) durumunu belirt */
+a:hover {
+  color: #0056b3; /* Link hover durumunda metin rengi */
+}
+
+/* Buton stilleri */
+.btn {
+  display: inline-block; /* Butonların yan yana gelmesini sağla */
+  padding: 10px 20px; /* Buton içeriğine göre yükseklik ve genişlik */
+  font-size: 16px; /* Buton metin boyutu */
+  border: none; /* Buton kenarlığını kaldır */
+  border-radius: 5px; /* Buton köşe yuvarlaklığı */
+  cursor: pointer; /* Butona fare imleci göster */
+  transition: background-color 0.3s, color 0.3s; /* Buton hover efekti için geçiş süresi */
+}
+
+/* Buton hover (üzerine gelindiğinde) durumunu belirt */
+.btn:hover {
+  background-color: #007bff; /* Buton hover durumunda arka plan rengi */
+  color: #fff; /* Buton hover durumunda metin rengi */
+}
+
+/* Navbar stilini belirt */
+.navbar {
+  background-color: #343a40; /* Navbar arka plan rengi */
+  color: #fff; /* Navbar metin rengi */
+}
+
+/* Footer stilini belirt */
+footer {
+  background-color: #343a40; /* Footer arka plan rengi */
+  color: #fff; /* Footer metin rengi */
+}
+h3 {
+  color: #343a40; /* Başlık metin rengi */
+  font-size: 24px; /* Başlık font boyutu */
+  font-weight: bold; /* Kalın font */
+  margin-bottom: 10px; /* Başlık alt boşluğu */
+}
+
+/* Açıklama stilini belirt */
+p {
+  color: #6c757d; /* Açıklama metin rengi */
+  font-size: 18px; /* Açıklama font boyutu */
+  line-height: 1.5; /* Satır yüksekliği */
+}
